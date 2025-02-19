@@ -50,7 +50,7 @@ PORT     STATE    SERVICE VERSION
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Mar 15 20:20:03 2020 -- 1 IP address (1 host up) scanned in 93.34 seconds
+# Nmap done at Sun Mar 15 20:20:03 2020 -- 1 IP address (1 host up) scanned in 83.34 seconds
 ```
 We get 2 Ports Open Lets visit `PORT 80`
 
