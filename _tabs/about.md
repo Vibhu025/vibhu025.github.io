@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# Vibhu
+# Vibhu Bansal
 
 Senior Security Consultant @EY
 
