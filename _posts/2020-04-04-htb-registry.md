@@ -16,8 +16,6 @@ image:
 | Difficulty| Hard      |
 | Points | 40 |
 | OS | Linux|
-| Creator | [thek](https://www.hackthebox.eu/home/users/profile/4615)|
-
 
 
 # Brief:~$

@@ -17,7 +17,6 @@ image:
 | Difficulty| Easy   |
 | Points | 20 |
 | OS | Linux|
-| Creator |[Xh4H](https://www.hackthebox.eu/home/users/profile/21439)|
 
 # Brief:~$
 
