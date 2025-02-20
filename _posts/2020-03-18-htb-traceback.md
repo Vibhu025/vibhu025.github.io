@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hackthebox Traceback Writeup
-date: 2020-03-18 20:00:00 +/-TTTT
+date: 2020-03-18 20:00 +0530
 categories: [Hackthebox, Machine]
 tags: [Hackthebox, Linux, lua, GTFObins, update-mote.d]
 image: [/assets/img/post/hackthebox/traceback/main.png]
