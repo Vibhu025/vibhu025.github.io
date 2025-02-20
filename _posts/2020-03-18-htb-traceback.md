@@ -55,7 +55,7 @@ We get 2 Ports Open Lets visit `PORT 80`
 
 On visiting the Page we get 
 
-![Traceback](/assets/img/post/hackthebox/traceback/1.png)
+![Traceback](/assets/img/post/hackthebox/traceback/1.png){: w="700" h="400" }
 
 On analyzing the Source code I found
 
@@ -126,11 +126,11 @@ smevk.php               [Status: 200, Size: 1261, Words: 318, Lines: 59]
 
 We got a match let's visit 10.10.10.181/smevk.php 
 
-![Traceback](/assets/img/post/hackthebox/traceback/2.png)
+![Traceback](/assets/img/post/hackthebox/traceback/2.png){: w="700" h="400" }
 
 On trying admin:admin I got access 
 
-![Traceback](/assets/img/post/hackthebox/traceback/3.png)
+![Traceback](/assets/img/post/hackthebox/traceback/3.png){: w="700" h="400" }
 
 # Initial Foothold:~$
 
