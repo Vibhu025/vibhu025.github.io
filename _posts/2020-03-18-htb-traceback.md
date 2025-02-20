@@ -4,6 +4,8 @@ title: Hackthebox Traceback Writeup
 date: 2020-03-18 20:00 +0530
 categories: [Hackthebox, Machine]
 tags: [Hackthebox, Linux, lua, GTFObins, update-mote.d]
+image:
+  path: /assets/img/post/hackthebox/traceback/main.png
 ---
 
 # Information:~$
