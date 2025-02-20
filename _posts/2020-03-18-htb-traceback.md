@@ -1,6 +1,5 @@
 ---
 title: Hackthebox Traceback Writeup
-author: Vibhu Bansal
 date: 2020-03-18 20:00:00 +/-TTTT
 categories: [Hackthebox, Machine]
 tags: [Hackthebox, Linux, lua, GTFObins, update-mote.d]
