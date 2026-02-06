@@ -10,6 +10,7 @@
             --bg-color: #0f172a;
             --text-color: #e2e8f0;
             --card-bg: #1e293b;
+            --highlight: #38bdf8;
         }
 
         body {
@@ -22,7 +23,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -35,27 +36,29 @@
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin: 0 0 10px 0;
             color: var(--primary-color);
             letter-spacing: -1px;
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 500;
             opacity: 0.9;
+            color: var(--highlight);
         }
 
         .contact-info {
             margin-top: 15px;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
         .contact-info a {
-            color: var(--primary-color);
+            color: var(--text-color);
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 12px;
+            border-bottom: 1px solid var(--primary-color);
         }
 
         section {
@@ -68,39 +71,78 @@
             margin-bottom: 25px;
             color: var(--primary-color);
             text-transform: uppercase;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
         }
 
         .card {
             background: var(--card-bg);
-            padding: 25px;
+            padding: 30px;
             border-radius: 12px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        .job-header {
+        .project-feature {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 1px solid var(--primary-color);
+        }
+
+        .entry-header {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            font-weight: bold;
-            margin-bottom: 12px;
+            font-weight: 700;
+            margin-bottom: 15px;
             color: #fff;
+            font-size: 1.1rem;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-link.secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .project-link:hover {
+            background-color: #fff;
+            color: var(--bg-color);
+            transform: scale(1.05);
         }
 
         .tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
         }
 
         .tag {
-            background: rgba(0, 255, 157, 0.1);
-            color: var(--primary-color);
-            padding: 6px 14px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            border: 1px solid rgba(0, 255, 157, 0.3);
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--highlight);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
             font-weight: 600;
         }
 
@@ -110,28 +152,29 @@
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .cert-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 15px;
         }
 
         .cert-item {
             background: var(--card-bg);
-            padding: 15px;
+            padding: 18px;
             border-radius: 8px;
-            border-left: 3px solid var(--primary-color);
+            border-left: 4px solid var(--primary-color);
+            font-weight: 500;
         }
 
         footer {
             text-align: center;
-            font-size: 0.85rem;
-            margin-top: 60px;
+            font-size: 0.9rem;
+            margin-top: 80px;
             padding-bottom: 40px;
-            opacity: 0.5;
+            opacity: 0.6;
         }
     </style>
 </head>
@@ -144,55 +187,82 @@
         <div class="contact-info">
             Gurgaon, India | 
             <a href="mailto:Vibhu025@gmail.com">Vibhu025@gmail.com</a> | 
-            08168945316 | 
-            <a href="#">LinkedIn</a>
+            +91-8168945316 | 
+            <a href="https://www.linkedin.com/in/vibhu-bansal-836746194/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Vibhu025" target="_blank">GitHub</a>
         </div>
     </header>
 
-    <section>
+    <section id="summary">
         <h2>Professional Summary</h2>
         <p>
-            Dedicated Senior Security Consultant with extensive experience in cybersecurity, specializing in application penetration testing, network security, and red teaming. Proven expertise in manual and automated assessments across banking, accounting, and oil & gas sectors. Adept at identifying critical vulnerabilities in web, API, and cloud environments (AWS/GCP).
+            Dedicated Senior Security Consultant with extensive experience in the cybersecurity domain, specializing in application penetration testing, network security, and red teaming. Proven expertise in conducting manual and automated assessments across diverse sectors, including banking, accounting, and oil & gas. Adept at identifying critical vulnerabilities in web, API, and cloud environments (AWS/GCP) while providing actionable remediation strategies to stakeholders.
         </p>
     </section>
 
-    <section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card project-feature">
+            <div class="entry-header">
+                <span>Postman Collection Analyzer</span>
+                <span style="color: var(--primary-color);">Open Source</span>
+            </div>
+            <p>
+                <strong>A professional, high-performance, single-file HTML application designed to audit, normalize, and analyze Postman collections.</strong> Built specifically for security researchers, penetration testers, developers, and QA engineers who need to visualize API surface areas quickly and securely.
+            </p>
+            <div class="tags">
+                <span class="tag">Security Auditing</span>
+                <span class="tag">API Analysis</span>
+                <span class="tag">Penetration Testing</span>
+                <span class="tag">Normalization</span>
+            </div>
+            <div class="btn-container">
+                <a href="https://vibhu025.github.io/Postman-Parser/" class="project-link" target="_blank">Launch App</a>
+                <a href="https://github.com/Vibhu025/Postman-Parser" class="project-link secondary" target="_blank">GitHub Repo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
         <h2>Professional Experience</h2>
         
         <div class="card">
-            <div class="job-header">
+            <div class="entry-header">
                 <span>EY GDS | Senior Security Consultant</span>
                 <span>Oct 2023 - Present</span>
             </div>
             <ul>
-                <li>Perform advanced manual and automated application penetration testing for global clients.</li>
-                <li>Conduct cloud-native penetration testing and infrastructure assessments for AWS and GCP.</li>
-                <li>Document technical findings and present remediation recommendations to executive leadership.</li>
-                <li>Mentor and lead team members in web application security testing and secure coding frameworks.</li>
+                <li>Perform advanced manual and automated application penetration testing for global clients in banking, accounting, and energy sectors.</li>
+                <li>Conduct cloud-native penetration testing and infrastructure assessments specifically for AWS and GCP environments.</li>
+                <li>Document technical findings and present remediation recommendations to technical teams and executive leadership.</li>
+                <li>Mentor and lead team members in mastering web application security testing and secure coding frameworks.</li>
+                <li>Identify and validate vulnerabilities across complex network and cloud infrastructures to strengthen client security posture.</li>
             </ul>
         </div>
 
         <div class="card">
-            <div class="job-header">
+            <div class="entry-header">
                 <span>Synopsys | Cyber Security Consultant</span>
                 <span>Feb 2021 - Sep 2023</span>
             </div>
             <ul>
-                <li>Executed PT and DAST assessments for high-stakes internal and public-facing applications.</li>
-                <li>Led API penetration testing initiatives, identifying logic flaws and broken authorization patterns.</li>
-                <li>Managed project lifecycles including due diligence, scoping, and final quality reviews.</li>
-                <li>Trained junior consultants on web application security best practices.</li>
+                <li>Executed Penetration Testing (PT) and DAST assessments for high-stakes internal and public-facing applications.</li>
+                <li>Led API penetration testing initiatives for diverse clients, identifying logic flaws and broken authorization patterns.</li>
+                <li>Managed project lifecycles including due diligence, initial scoping, and final quality review of client-facing deliverables.</li>
+                <li>Provided hands-on remediation support to help client developers effectively patch security findings.</li>
+                <li>Trained and mentored junior consultants on web application security best practices.</li>
             </ul>
         </div>
     </section>
 
-    <section>
-        <h2>Technical Skills</h2>
+    <section id="skills">
+        <h2>Technical Arsenal</h2>
         <div class="tags">
             <span class="tag">VAPT</span>
             <span class="tag">Web App Pentesting</span>
             <span class="tag">API Pentesting</span>
-            <span class="tag">AWS/GCP Security</span>
+            <span class="tag">AWS Security</span>
+            <span class="tag">GCP Security</span>
             <span class="tag">Burp Suite Pro</span>
             <span class="tag">Kali Linux</span>
             <span class="tag">Postman</span>
@@ -201,8 +271,8 @@
         </div>
     </section>
 
-    <section>
-        <h2>Certifications</h2>
+    <section id="certifications">
+        <h2>Professional Certifications</h2>
         <div class="cert-grid">
             <div class="cert-item">CRTE - Certified Red Team Expert</div>
             <div class="cert-item">CRTP - Certified Red Team Professional</div>
@@ -211,17 +281,19 @@
         </div>
     </section>
 
-    <section>
+    <section id="education">
         <h2>Education</h2>
         <div class="card">
-            <strong>B.Tech in Computer Science</strong> | Graduated May 2021<br>
-            UPES (University of Petroleum and Energy Studies), Dehradun<br>
-            <em>Specialization in Cyber Security and Forensics</em>
+            <div class="entry-header">
+                <span>B.Tech in Computer Science (Cyber Security & Forensics)</span>
+                <span>Graduated May 2021</span>
+            </div>
+            UPES (University of Petroleum and Energy Studies), Dehradun
         </div>
     </section>
 
     <footer>
-        &copy; 2026 Vibhu Bansal | Security Professional
+        &copy; 2026 Vibhu Bansal | Senior Security Consultant
     </footer>
 </div>
 
