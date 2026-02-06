@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibhu Bansal | Senior Security Consultant</title>
+    <style>
+        :root {
+            --primary-color: #00ff9d; 
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --card-bg: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tag {
+            background: rgba(0, 255, 157, 0.1);
+            color: var(--primary-color);
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(0, 255, 157, 0.3);
+            font-weight: 600;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .cert-item {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            margin-top: 60px;
+            padding-bottom: 40px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Vibhu Bansal</h1>
+        <div class="subtitle">Senior Security Consultant</div>
+        <div class="contact-info">
+            Gurgaon, India | 
+            <a href="mailto:Vibhu025@gmail.com">Vibhu025@gmail.com</a> | 
+            08168945316 | 
+            <a href="#">LinkedIn</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>
+            Dedicated Senior Security Consultant with extensive experience in cybersecurity, specializing in application penetration testing, network security, and red teaming. Proven expertise in manual and automated assessments across banking, accounting, and oil & gas sectors. Adept at identifying critical vulnerabilities in web, API, and cloud environments (AWS/GCP).
+        </p>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        
+        <div class="card">
+            <div class="job-header">
+                <span>EY GDS | Senior Security Consultant</span>
+                <span>Oct 2023 - Present</span>
+            </div>
+            <ul>
+                <li>Perform advanced manual and automated application penetration testing for global clients.</li>
+                <li>Conduct cloud-native penetration testing and infrastructure assessments for AWS and GCP.</li>
+                <li>Document technical findings and present remediation recommendations to executive leadership.</li>
+                <li>Mentor and lead team members in web application security testing and secure coding frameworks.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="job-header">
+                <span>Synopsys | Cyber Security Consultant</span>
+                <span>Feb 2021 - Sep 2023</span>
+            </div>
+            <ul>
+                <li>Executed PT and DAST assessments for high-stakes internal and public-facing applications.</li>
+                <li>Led API penetration testing initiatives, identifying logic flaws and broken authorization patterns.</li>
+                <li>Managed project lifecycles including due diligence, scoping, and final quality reviews.</li>
+                <li>Trained junior consultants on web application security best practices.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="tags">
+            <span class="tag">VAPT</span>
+            <span class="tag">Web App Pentesting</span>
+            <span class="tag">API Pentesting</span>
+            <span class="tag">AWS/GCP Security</span>
+            <span class="tag">Burp Suite Pro</span>
+            <span class="tag">Kali Linux</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Nmap</span>
+            <span class="tag">DAST</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-item">CRTE - Certified Red Team Expert</div>
+            <div class="cert-item">CRTP - Certified Red Team Professional</div>
+            <div class="cert-item">HTB - Dante Pro Lab (Level 1)</div>
+            <div class="cert-item">CEH - Certified Ethical Hacker</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="card">
+            <strong>B.Tech in Computer Science</strong> | Graduated May 2021<br>
+            UPES (University of Petroleum and Energy Studies), Dehradun<br>
+            <em>Specialization in Cyber Security and Forensics</em>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Vibhu Bansal | Security Professional
+    </footer>
+</div>
+
+</body>
+</html>
