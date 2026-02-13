@@ -176,6 +176,21 @@
             padding-bottom: 40px;
             opacity: 0.6;
         }
+
+        .project-description {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .feature-list {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .feature-list li {
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
     </style>
 </head>
 <body>
@@ -187,7 +202,7 @@
         <div class="contact-info">
             Gurgaon, India | 
             <a href="mailto:Vibhu025@gmail.com">Vibhu025@gmail.com</a> | 
-            +91-8168945316 | 
+            08168945316 | 
             <a href="https://www.linkedin.com/in/vibhu-bansal-836746194/" target="_blank">LinkedIn</a> |
             <a href="https://github.com/Vibhu025" target="_blank">GitHub</a>
         </div>
@@ -204,21 +219,30 @@
         <h2>Projects</h2>
         <div class="card project-feature">
             <div class="entry-header">
-                <span>Postman Collection Analyzer</span>
+                <span>🛡️ Security Tools Suite</span>
                 <span style="color: var(--primary-color);">Open Source</span>
             </div>
-            <p>
-                <strong>A professional, high-performance, single-file HTML application designed to audit, normalize, and analyze Postman collections.</strong> Built specifically for security researchers, penetration testers, developers, and QA engineers who need to visualize API surface areas quickly and securely.
-            </p>
+            <div class="project-description">
+                <strong>A professional, high-performance, single-file HTML application combining two powerful security analysis tools:</strong> Nmap Report Analyzer and Postman Collection Analyzer. Built specifically for security researchers, penetration testers, bug bounty hunters, and developers who need comprehensive network and API reconnaissance capabilities.
+            </div>
+            <div class="project-description">
+                <strong>Key Features:</strong>
+            </div>
+            <ul class="feature-list">
+                <li><strong>Nmap Report Analyzer:</strong> Parse XML, .nmap, and text outputs to identify open ports, services, and critical vulnerabilities with real-time filtering and CSV export</li>
+                <li><strong>Postman Collection Analyzer:</strong> Deep variable resolution, smart URL normalization, intelligent deduplication, and professional reporting for API surface mapping</li>
+            </ul>
             <div class="tags">
-                <span class="tag">Security Auditing</span>
+                <span class="tag">Network Security</span>
                 <span class="tag">API Analysis</span>
                 <span class="tag">Penetration Testing</span>
-                <span class="tag">Normalization</span>
+                <span class="tag">Nmap Parser</span>
+                <span class="tag">Postman Parser</span>
+                <span class="tag">Offline Tools</span>
             </div>
             <div class="btn-container">
-                <a href="https://vibhu025.github.io/Postman-Parser/" class="project-link" target="_blank">Launch App</a>
-                <a href="https://github.com/Vibhu025/Postman-Parser" class="project-link secondary" target="_blank">GitHub Repo</a>
+                <a href="https://vibhu025.github.io/parser/" class="project-link" target="_blank">Launch App</a>
+                <a href="https://github.com/Vibhu025/parser" class="project-link secondary" target="_blank">GitHub Repo</a>
             </div>
         </div>
     </section>
@@ -261,12 +285,13 @@
             <span class="tag">VAPT</span>
             <span class="tag">Web App Pentesting</span>
             <span class="tag">API Pentesting</span>
+            <span class="tag">Network Security</span>
             <span class="tag">AWS Security</span>
             <span class="tag">GCP Security</span>
             <span class="tag">Burp Suite Pro</span>
             <span class="tag">Kali Linux</span>
-            <span class="tag">Postman</span>
             <span class="tag">Nmap</span>
+            <span class="tag">Postman</span>
             <span class="tag">DAST</span>
         </div>
     </section>
